@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/offline_download_progressLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="40dip"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <TextView
+        android:id="@+id/offline_download_tip_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热推"
+        android:textColor="#1d7fbc" />
+
+    <TextView
+        android:id="@+id/offline_download_tip_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/offline_download_tip_title"
+        android:gravity="right"
+        android:paddingRight="2dip"
+        android:text="正在下载"
+        android:textColor="#1d7fbc" />
+
+    <TextView
+        android:id="@+id/offline_download_tip_process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="4%"
+        android:textColor="#1d7fbc" />
+
+    <ProgressBar
+        android:id="@+id/offline_download_tip_progressBar"
+        style="@style/progressbarStyle_Horizontal_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"
+        android:layout_below="@id/offline_download_tip_title" />
+
+</RelativeLayout>
